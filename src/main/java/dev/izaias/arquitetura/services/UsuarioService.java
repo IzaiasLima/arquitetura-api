@@ -23,4 +23,10 @@ public class UsuarioService {
 		repository.save(usuario);
 	}
 
+	public Usuario getUsuario(Long id) {
+		return repository.findById(id).orElse(new Usuario());
+	}
+
+
+
 }
