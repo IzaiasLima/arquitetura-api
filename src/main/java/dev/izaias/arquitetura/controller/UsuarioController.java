@@ -19,15 +19,14 @@ public class UsuarioController {
 	public List<Usuario> listarUsuarios() {
 
 
-		Usuario usuario = new Usuario();
-
-		usuario.setNome("Izaias Lima");
-		usuario.setEmail("izaias@dev");
-		usuario.setTelefone("931313393");
-		service.salvar(usuario);
+//		Usuario usuario = new Usuario();
+//
+//		usuario.setNome("Luciete Monteiro");
+//		usuario.setEmail("luciete@dev");
+//		usuario.setTelefone("931313393");
+//		service.salvar(usuario);
 
 		List<Usuario> lista = service.listarUsuarios();
-		lista.add(usuario);
 
 		return lista;
 	}
